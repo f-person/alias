@@ -3,6 +3,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 import 'core/router/router.gr.dart';
+import 'core/theme/theme_data.dart';
 
 class AppWidget extends StatelessWidget {
   AppWidget({Key? key}) : super(key: key);
@@ -15,6 +16,7 @@ class AppWidget extends StatelessWidget {
       title: PresentationConstants.appName,
       routeInformationParser: _router.defaultRouteParser(),
       routerDelegate: AutoRouterDelegate(_router),
+      theme: defaultThemeData(),
     );
   }
 }
