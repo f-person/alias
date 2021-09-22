@@ -11,11 +11,13 @@ environment:
 dependencies:
   auto_route: ^2.3.2
   cupertino_icons: ^1.0.2
-  dartz: ^0.10.0
   flutter:
     sdk: flutter
-  flutter_bloc: ^7.2.0
+  flutter_bloc: ^7.3.0
+  flutter_hooks: ^0.18.0
+  fpdart: ^0.0.11
   freezed_annotation: ^0.14.3
+  get_it: ^7.2.0
   json_annotation: ^4.1.0
 
 dev_dependencies:
