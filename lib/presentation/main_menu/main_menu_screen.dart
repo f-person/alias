@@ -17,13 +17,7 @@ class MainMenuScreen extends HookWidget {
     return BlocProvider<MainMenuBloc>(
       create: (_) => getIt<MainMenuBloc>(),
       child: BlocListener<MainMenuBloc, MainMenuState>(
-        listenWhen: (_, __) {
-          print('listen when');
-          return true;
-        },
         listener: (context, state) {
-          print('listenWhen called $state');
-
           state.when(
             initial: empty,
             navigationToGameStarted: () {
