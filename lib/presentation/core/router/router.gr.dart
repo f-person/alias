@@ -4,7 +4,8 @@
 // AutoRouteGenerator
 // **************************************************************************
 
-import 'package:alias/presentation/game/start_game_screen.dart' as _i4;
+import 'package:alias/presentation/game/start_game/start_game_screen.dart'
+    as _i4;
 import 'package:alias/presentation/main_menu/main_menu_screen.dart' as _i3;
 import 'package:auto_route/auto_route.dart' as _i1;
 import 'package:flutter/material.dart' as _i2;

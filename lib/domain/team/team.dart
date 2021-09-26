@@ -1,15 +1,18 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:uuid/uuid.dart';
 
 part 'team.freezed.dart';
-part 'team.g.dart';
 
 @freezed
-@JsonSerializable()
 class Team with _$Team {
-  const factory Team({
+  factory Team({
     required String name,
-    required int score,
+    required String id,
+    @Default(0) int score,
   }) = _Team;
 
-  factory Team.fromJson(Map<String, dynamic> json) => _$TeamFromJson(json);
+  factory Team.newTeam({required String name}) => Team(
+        id: const Uuid().v4(),
+        name: name,
+      );
 }
